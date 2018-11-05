@@ -36,8 +36,10 @@ public class LdapService {
             System.out.println("Authenticated in LDAP Server...");
             return true;
         } catch (LDAPException | UnsupportedEncodingException ex) {
-            System.out.println("ERROR when connecting to LDAP Server...");
+            System.out.println("---------Aqui empieza el error");
             ex.printStackTrace();
+            System.out.println("ERROR when connecting to LDAP Server...");
+            
             return false;
         }
     }
