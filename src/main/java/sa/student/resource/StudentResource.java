@@ -37,7 +37,7 @@ public class StudentResource {
         response.entity(student);
         return response.build();
     }
-//method to obtain studet by its username
+
     @GET
     @Path("{username}")
     public Response getStudentByUsername(@PathParam("username") String username) {
