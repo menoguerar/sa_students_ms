@@ -1,0 +1,17 @@
+version: '2'
+services:
+  students-ms:
+    image: menoguera/sa_students_ms
+    ports:
+      - "3001:3001"
+    depends_on:
+      - students-db
+  students-db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: students-db
+      MYSQL_USER: sa
+      MYSQL_PASSWORD: 123
+    ports:
+      - "3306:3306"
