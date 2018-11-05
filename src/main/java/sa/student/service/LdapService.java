@@ -37,6 +37,7 @@ public class LdapService {
             return true;
         } catch (LDAPException | UnsupportedEncodingException ex) {
             System.out.println("ERROR when connecting to LDAP Server...");
+            ex.printStackTrace();
             return false;
         }
     }

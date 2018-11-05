@@ -1,3 +1,5 @@
+sa-students-ms
+
 version: '2'
 services:
   students-ms:
